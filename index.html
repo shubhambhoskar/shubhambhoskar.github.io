@@ -23,8 +23,11 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+	</script>
 
-  </head>
+</head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" >
 	  
 	  
@@ -40,7 +43,9 @@
 			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#about-section">About</a>
 			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#skills-section">Skills</a>
 			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#projects-section">Projects</a>
-			 
+			  <!-- <a class="dropdown-item" style="color: rgb(255,255,255);" href="#about-section">Resume</a> -->
+			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="ShubhamBhoskar_Resume.pdf" download="Shubham Resume" target="_blank">Resume</a>
+
 			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#contact-section">Contact</a>
 			</div>
 		  </div>
@@ -56,6 +61,8 @@
 	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
 	         
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+			  <li class="nav-item"><a  href="ShubhamBhoskar_Resume.pdf" download="Shubham Resume" class="nav-link" target="_blank"><span>Resume</span></a></li>
+
 	        </ul>
 	      </div>
 	    </div>
@@ -65,7 +72,7 @@
     </section>
     
 	<div id="nameDiv" class="col-md-12 text-center">
-		<h1 id="a" class="animate-charcter">Hi I'am Shubham Bhoskar</h1>
+		<h1 id="a" class="animate-charcter">Hi I am Shubham Bhoskar</h1>
     <br>
 		<h1 class="animate-charcter">JAVA BACK-END DEVELOPER</h1>
 
@@ -179,7 +186,7 @@
 <h2 id="myGitCalHeading" data-aos="fade-up" data-aos-delay="300" >My <span class="txtc">Github</span>  Calander</h2> <br><br>
 <div style="width:90%;"  data-aos="fade-up" data-aos-delay="400" class="calendar">
 </div>
-<div style="justify-content: space-evenly; display: flex; margin-top: 30px;">
+<div style="justify-content: space-evenly; display: flex; margin-top: 30px; flex-wrap: wrap;">
 
 
     <!-- GitHub Statistics -->
@@ -243,6 +250,30 @@
 					</div>
 					
 				</div> -->
+
+				 <div id="divprojects">
+					<div id="image_div" class="image_div">
+						<img src="images\bus reservation.png" alt="">
+					</div>
+					<div class="para_div">
+						<h3>Automated Student Registrartion System</h3>
+						<p class="projectDes">This is my console base project.In that projects , there are different methods to create and add and batch creation ,student adding to the batch. </p>
+						<div id="stacks">
+							<button>JAVA</button>
+							<button>MYSQL</button>
+							<button>JDBC</button>
+						</div>
+
+						<div id="delbtns">
+							<a href="https://github.com/vinaykumar2n/succinct-wrench-1095" target="_blank"><button class="button-84">Code</button></a>
+							<a href="https://github.com/vinaykumar2n/succinct-wrench-1095" target="_blank"><button class="button-84">Live Explination</button></a>
+	
+						</div>
+					</div>
+					
+				</div> 
+
+
 
 				<div>
 					<div id="image_div" class="image_div">
@@ -378,6 +409,23 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-    
+  
   </body>
+  <script>
+
+
+    // To Enable responsiveness of the Calendar 
+    GitHubCalendar(".calendar", "shubhambhoskar", { responsive: true });
+    function myFunction() {
+        console.log("Inside Function")
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    
+</script>
 </html>

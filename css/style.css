@@ -9766,3 +9766,16 @@ textarea.form-control {
   justify-content: center;
   align-items: center;
 }
+
+    #streak{
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 600px) and (min-width: 400px){
+        #streak{
+            flex-wrap: wrap;
+            width: 250px;
+        }
+        #streak>img{
+            flex-wrap: wrap;
+        }
+    }

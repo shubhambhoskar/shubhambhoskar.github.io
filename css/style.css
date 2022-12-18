@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -2665,6 +2665,7 @@ input[type="button"].btn-block {
   right: 100%;
   left: auto;
   margin-top: 0;
+  background-color: red;
   margin-right: 0.125rem; }
 
 .dropleft .dropdown-toggle::after {
@@ -2715,11 +2716,11 @@ input[type="button"].btn-block {
   .dropdown-item:hover, .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
-    background-color: #f8f9fa; }
+    background-color: #350d35; }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #007bff; }
+    background-color: #350d35; }
   .dropdown-item.disabled, .dropdown-item:disabled {
     color: #6c757d;
     pointer-events: none;
@@ -9766,16 +9767,18 @@ textarea.form-control {
   justify-content: center;
   align-items: center;
 }
-
-    #streak{
-        flex-wrap: wrap;
-    }
-    @media screen and (max-width: 600px) and (min-width: 400px){
-        #streak{
-            flex-wrap: wrap;
-            width: 250px;
-        }
-        #streak>img{
-            flex-wrap: wrap;
-        }
-    }
+#streak{
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) and (min-width: 400px){
+  #streak{
+      flex-wrap: wrap;
+      width: 250px;
+  }
+  #streak>img{
+      flex-wrap: wrap;
+  }
+}
+body{
+  background-color: #350d35;
+}

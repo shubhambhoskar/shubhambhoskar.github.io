@@ -9774,8 +9774,10 @@ textarea.form-control {
   #streak{
       flex-wrap: wrap;
       width: 250px;
+      height: auto;
   }
   #streak>img{
+    height: auto;
       flex-wrap: wrap;
   }
 }

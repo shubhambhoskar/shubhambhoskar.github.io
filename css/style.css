@@ -9770,7 +9770,7 @@ textarea.form-control {
 #streak{
   flex-wrap: wrap;
 }
-@media screen and (max-width: 600px) and (min-width: 400px){
+@media screen and (max-width: 600px) and (min-width: 370px){
   #streak{
       flex-wrap: wrap;
       width: 250px;

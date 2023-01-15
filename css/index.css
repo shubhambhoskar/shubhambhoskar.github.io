@@ -281,6 +281,14 @@
   }
   
    @media only screen and (min-width: 426px) and (max-width: 768px){
+    .skills{
+      border: 1px solid transparent;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 20px;
+      width: auto;
+      height: auto;
+    }
     .blogs{
       border: 1px solid transparent;
       display: grid;
@@ -307,12 +315,14 @@
     }
   } 
   
-   @media only screen and (min-width: 376px) and (max-width: 425px){
+   @media only screen and (min-width: 375px) and (max-width: 425px){
     .skills{
       border: 1px solid transparent;
       display: grid;
       grid-template-columns: repeat(2,1fr);
       grid-gap: 20px;
+      width: auto;
+      height: auto;
     }
   
     .h3{
@@ -373,6 +383,8 @@
       display: grid;
       grid-template-columns: repeat(2,1fr);
       grid-gap: 20px;
+      width: auto;
+      height: auto;
     }
   
     .h3{
